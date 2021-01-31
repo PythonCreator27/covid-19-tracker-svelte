@@ -2,7 +2,7 @@
 
 This is a COVID-19 tracker built with [svelte](https://svelte.dev) and [sapper](https://sapper.svelte.dev).
 
-You can clone the repo bu running:
+You can clone the repo by running:
 
 ```bash
 git clone https://github.com/PythonCreator27/covid-19-tracker-svelte
