@@ -5,8 +5,14 @@
 </script>
 
 <svelte:head>
-    <title>COVID-19 Tracker App for the US</title>
+    <title>COVID-19 Tracker (US)</title>
 </svelte:head>
+
+<div class="section header">
+    <div class="container">
+        <h1>COVID-19 Tracker (US)</h1>
+    </div>
+</div>
 
 <CovidStats />
 <CovidChart />
