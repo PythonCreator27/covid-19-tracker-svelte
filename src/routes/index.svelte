@@ -8,7 +8,7 @@
     export const preload: Preload = async () => {
         try {
             const stats = await usStats();
-            return { usStats: stats };
+            return { stats };
         } catch (err) {
             console.log(err);
         }
@@ -16,8 +16,7 @@
 </script>
 
 <script lang="ts">
-    export let usStats;
-    console.log(usStats.updated);
+    export let stats;
 </script>
 
 <svelte:head>
@@ -30,6 +29,6 @@
     </div>
 </div>
 
-<CovidStats />
+<CovidStats {stats} />
 <CovidChart />
 <TableContainer />
