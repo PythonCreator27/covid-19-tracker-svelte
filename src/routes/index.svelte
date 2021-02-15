@@ -5,12 +5,13 @@
     import TableContainer from '../components/Table/TableContainer/TableContainer.svelte';
     import { usStats } from '../data/requests';
 
-    export const preload: Preload = async () => {
+    export const preload: Preload = async function () {
         try {
             const stats = await usStats();
             return { stats };
         } catch (err) {
-            console.log(err);
+            this.error(500, err.message);
+            return;
         }
     };
 </script>
